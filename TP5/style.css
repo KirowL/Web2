@@ -1,0 +1,122 @@
+* {
+    font-family: Courier, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-title {
+    text-align: center;
+}
+
+#user-infos {
+    padding: 10%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group input, .form-group select {
+    margin-top: 10px;
+    padding: 3%;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid black;
+    transition: border-bottom .5s ease-in-out;
+}
+
+.form-group input:focus, .form-group select:focus{
+    border-bottom: 2px solid #007bff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}
+
+#card {
+    width: 80%;
+    border: 1px solid black;
+    aspect-ratio: 16/8;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttons-container {
+    text-align: center;
+}
+
+#submit, #reset {
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit:hover, #reset:hover {
+    cursor: pointer;
+}
+
+#submit {
+    background-color: #007bff;
+}
+
+#reset {
+    background-color: #6c757d;
+}
+
+#card-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: -42%;
+}
+
+#card-top-right-text {
+    position: fixed;
+    right: 5%;
+    padding: 0;
+    margin: 0;
+}
+
+#card-centered-text {
+    align-items: center;
+}
+
+#error-div {
+    margin-top: 3%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    width: 100%;
+    background-color: #ffb6c1;
+    display: none;
+}
+
+.error {
+    background-color: #ffb6c1;
+}

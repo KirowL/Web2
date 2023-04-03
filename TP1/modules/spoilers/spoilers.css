@@ -1,0 +1,8 @@
+.spoiler {
+    color: orange;
+    display: none;
+}
+
+.spoiler-visible {
+    background: initial;
+}

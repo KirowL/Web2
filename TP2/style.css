@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+    background: 18181A;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: #18181A;
+    padding: 10px;
+}
+
+#diaporama {
+    width: 800px;
+    height: 100vh; 
+    max-height: 655px;
+    background: black;
+    padding: 1rem;
+}
+
+#display {
+    position: relative;
+    display: flex;
+    height: 60%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+
+    width: 100%;
+    min-width: 800px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    color: white;
+
+    background: black;
+
+    cursor: pointer;
+}
+
+
+.overlay:hover {
+    opacity: 0.5;
+}
+
+
+#thumbs-menu {
+    margin-top: 5px;
+    height: 40%;
+}
+
+#thumbs-list {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.thumb {
+    display: inline-block;
+    height: 120px;
+    margin: 55px;
+    padding: 3px;
+    border: 2px solid #000;
+}
+
+.thumb img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.active {
+    border: 2px solid orange;
+}
